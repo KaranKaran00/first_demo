@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Image & Audio Storage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>My Media Storage</h1>
+    <p class="subtitle">Upload one image and one audio file.</p>
+
+    <div class="card">
+
+      <label for="imageInput">Choose Image</label>
+      <input type="file" id="imageInput" accept="image/*">
+
+      <div class="preview">
+        <img id="imagePreview" alt="Image preview">
+      </div>
+
+      <label for="audioInput">Choose Audio</label>
+      <input type="file" id="audioInput" accept="audio/*">
+
+      <audio id="audioPreview" controls></audio>
+
+      <button id="saveButton">Save Files</button>
+
+      <button id="deleteButton" class="delete">
+        Delete Saved Files
+      </button>
+
+      <p id="message"></p>
+
+    </div>
+
+    <p class="note">
+      Your files are stored in this browser using IndexedDB.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
